@@ -52,11 +52,18 @@ A full-stack Help Desk Ticketing System built as an interview assignment using m
 - View Ticket Threads
 
 ---
+## Project Flow
+Admin credentials : admin@xriseai.com 
+                    admin123
 
-# 📁 Project Structure
+Agent1 Credentials : agent1@xriseai.com
+                     agent123
 
-```text id="nzt47q"
-helpdesk-webapp/
-├── be/                  Backend (NestJS)
-├── fe/                  Frontend (React)
-└── docker-compose.yml
+Agent2 Credentials : agent2@xriseai.com
+                    agent123
+
+
+## For admin/agent login /login path to see login page 
+For eg ip is http://15.134.225.30:3010  so Login path will be  ## http://15.134.225.30:3010/login
+                    
+                     
