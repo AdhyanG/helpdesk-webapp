@@ -1,0 +1,213 @@
+.ticket-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dbeafe, #eef2ff, #f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.ticket-card {
+  width: 100%;
+  max-width: 760px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  padding: 36px;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.header-top h1 {
+  margin: 0;
+}
+.ticket-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 55px rgba(37, 99, 235, 0.16);
+}
+
+.ticket-header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.5px;
+}
+.ticket-header {
+  margin-bottom: 18px;
+}
+
+.ticket-header p {
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.ticket-form {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.ticket-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #374151;
+}
+
+.ticket-form input,
+.ticket-form select,
+.ticket-form textarea {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #f9fafb;
+  color: #111827;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.ticket-form input:hover,
+.ticket-form select:hover,
+.ticket-form textarea:hover {
+  border-color: #93c5fd;
+  background: #ffffff;
+}
+
+.ticket-form input:focus,
+.ticket-form select:focus,
+.ticket-form textarea:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.ticket-form textarea {
+  resize: none;
+  min-height: 130px;
+}
+
+.ticket-form button {
+  margin-top: 8px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.18);
+}
+
+.ticket-form button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0 18px 30px rgba(37, 99, 235, 0.24);
+}
+
+.ticket-form button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .ticket-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-card {
+    padding: 24px;
+    border-radius: 18px;
+  }
+
+  .ticket-header h1 {
+    font-size: 28px;
+  }
+}
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+.ticket-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  width: 420px;
+  max-width: 95%;
+  text-align: center;
+}
+
+.ticket-id-box {
+  margin: 18px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.ticket-id-box span {
+  flex: 1;
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ticket-id-box button,
+.close-btn {
+  padding: 10px 14px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.track-status-btn {  border: none;
+    padding: 12px 18px; 
+     border-radius: 10px; 
+      background: linear-gradient(135deg, #10b981, #059669);
+        color: white; 
+         font-size: 14px; 
+          font-weight: 700; 
+           cursor: pointer;  
+           transition: all 0.3s ease;
+             box-shadow: 0 10px 18px rgba(16, 185, 129, 0.18);}
+             .track-status-btn:hover {  transform: translateY(-2px); 
+               background: linear-gradient(135deg, #059669, #047857);}
+               .track-status-btn:active {  transform: scale(0.98);}
+               @media (max-width: 768px) 
+               {  .header-top {    flex-direction: column;    align-items: flex-start;  }  .track-status-btn {    width: 100%;  }}
+
+
+

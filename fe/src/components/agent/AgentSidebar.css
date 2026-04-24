@@ -1,0 +1,102 @@
+/* src/components/agent/AgentSidebar.css */
+
+.agent-sidebar {
+  width: 315px;
+  min-height: 100vh;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+
+  /* NEW AGENT COLOR THEME */
+  background: linear-gradient(
+    180deg,
+    #065f46 0%,
+    #047857 45%,
+    #059669 100%
+  );
+
+  color: white;
+}
+
+/* top */
+.sidebar-top h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.sidebar-top p {
+  margin-top: 6px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.85);
+}
+
+/* menu */
+.sidebar-menu {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+/* clickable item */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 18px;
+  border-radius: 14px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  /* remove white box */
+  background: transparent;
+  color: white;
+}
+
+.sidebar-link::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #93c5fd;
+}
+
+/* selected by default */
+.sidebar-link.active {
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+/* hover */
+.sidebar-link:hover {
+  background: rgba(255,255,255,0.10);
+}
+
+/* footer */
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.logout-btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  background: #ef4444;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}

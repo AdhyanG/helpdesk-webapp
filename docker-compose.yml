@@ -1,0 +1,38 @@
+
+services:
+  backend:
+    build: ./be
+    container_name: nest_backend
+    restart: always
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./be/.env
+    depends_on:
+      - postgres
+
+  frontend:
+    build: ./fe
+    container_name: react_frontend
+    restart: always
+    # env_file:
+    #   - ./fe/.env
+    ports:
+      - "3010:80"
+    depends_on:
+      - backend
+
+  
+  postgres:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    env_file:
+      - ./be/.env
+    ports:
+      - "5435:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:

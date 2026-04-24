@@ -1,0 +1,66 @@
+.status-card {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.status-card h3 {
+  margin: 0 0 18px;
+  color: #111827;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.status-row:last-child {
+  border-bottom: none;
+}
+
+.status-row span {
+  color: #6b7280;
+}
+
+.status-row strong {
+  color: #111827;
+}
+.reply-box {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  background: white;
+}
+
+.reply-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.reply-top strong {
+  color: #111827;
+}
+
+.reply-top span {
+  font-size: 12px;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.reply-box p {
+  margin: 0 0 8px;
+  color: #374151;
+}
+
+.reply-box small {
+  color: #6b7280;
+}

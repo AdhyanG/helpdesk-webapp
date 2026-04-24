@@ -1,0 +1,137 @@
+.admin-dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.admin-dashboard-content {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.dashboard-header p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .admin-dashboard-content {
+    padding: 24px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .admin-dashboard-layout {
+    flex-direction: column;
+  }
+
+  .admin-dashboard-content {
+    padding: 18px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 28px;
+  }
+
+  .dashboard-header p {
+    font-size: 14px;
+  }
+}
+.admin-dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.admin-dashboard-content {
+  flex: 1;
+  padding: 32px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 44px;
+  color: #111827;
+}
+
+.dashboard-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 17px;
+}
+
+/* Filter Card */
+.dashboard-filter-card {
+  margin-top: 28px;
+  background: white;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+}
+
+.dashboard-filter-row {
+  display: flex;
+  gap: 14px;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.filter-group select,
+.filter-group input {
+  min-width: 210px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  border-color: #2563eb;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background: #1d4ed8;
+}
